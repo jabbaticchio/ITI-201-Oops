@@ -30,7 +30,7 @@ while(valid){
 	{
 		System.out.println("Please pick 1 or 2");
 		decision = scan.nextInt();
-	}
+		}
 	
 	int nextDecision;
 	nextDecision= scan.nextInt(); //made for which food to get
@@ -69,7 +69,7 @@ while(valid){
 		}
 			}
 }
-scan.close();
+
 scan.close();
 	}//end main method
 }//end College Student Center class
