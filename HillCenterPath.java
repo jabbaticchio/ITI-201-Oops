@@ -14,12 +14,12 @@ public class HillCenterPath{
 				System.out.println("Or, will you cut your losses and go back to the SERC Fields? (Type 1 to stay or 2 to go back.");
 				int decision=scan.nextInt();
 				while(valid){
-					if (decision == 1)//yes go get food
+					if (decision == 1)//wait for bus
 					{
 						valid = false;
 						System.out.println("You decided to stay and wait for the next bus.");
 					}
-					else if(decision == 2)//no go to college ave
+					else if(decision == 2)//go back to serc fields
 					{
 						valid = false;
 						System.out.println("You decided to go back to the SERC Fields");
