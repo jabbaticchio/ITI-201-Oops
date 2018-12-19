@@ -6,6 +6,21 @@ public class RoomsExample {
 		Random rd = new Random();
 		Scanner sc = new Scanner(System.in);
 		Room[] myRooms = new Room[5];
+		Room SercFields=new Room(Serc Fields,availableMoves, int randomNumber);
+		Room ARC=new Room(Alison Road Classroom Building,availableMoves, int randomNumber);
+		Room ChemLabs=new Room(Chemistry Labs,availableMoves, int randomNumber);
+		Room BSC=new Room(Busch Student Center,availableMoves, int randomNumber);
+		Room HCBS=new Room(Hill Center Bus Stop,availableMoves, int randomNumber);
+		Room Woodys=new Room(Woodys Food,availableMoves, int randomNumber);
+		Room PaneraBSC=new Room(Panera Bread at the Busch Student Center,availableMoves, int randomNumber);
+		Room GerlandasBSC =new Room(Gerlandas Pizza at the Busch Student Center,availableMoves, int randomNumber);
+		Room MoesBSC=new Room(Moes at the Busch Student Center ,availableMoves, int randomNumber);
+		Room CASC=new Room(College Avenue Student Center,availableMoves, int randomNumber);
+		Room PaneraCASC =new Room(Panera Bread at the College Avenue Student Center,availableMoves, int randomNumber);
+		Room GerlandasCASC=new Room(Gerlandas Pizza at the College Avenue Student Center,availableMoves, int randomNumber);
+		Room MoesCASC=new Room(Moes at the College Avenue Student Center,availableMoves, int randomNumber);
+		Room OopsRoom= new Room(Obj Oriented Programming Classroom, availableMoves, int randomNumber);
+
 		for(int i = 0; i < myRooms.length; i++){
 			String name = "Room " + (i+1);
 			int back = i-1;
