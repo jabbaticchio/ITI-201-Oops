@@ -1,0 +1,14 @@
+Serc Fields
+Arc
+Chem Labs
+Busch Student Center
+Hill Center Bus Stop
+Woodys
+Panera-BSC
+Gerlandas-BSC
+Moe's-BSC
+College Ave Student Center
+Panera-CASC
+Gerlandas-CASC
+Moes-CASC
+Object Oriented Programming Classroom
