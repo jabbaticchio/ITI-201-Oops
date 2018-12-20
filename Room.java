@@ -11,9 +11,12 @@ public abstract class Room {
 		this.randomNumber = randomNumber;
 	}//end of constructor
 	
+	public abstract void handle();
+	
 	public String getName() {
 		return name;
 	}//end getName();
+
 	
 	public void setName(String name) {
 		this.name = name;
