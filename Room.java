@@ -2,7 +2,8 @@ public abstract class Room {
 	private String name;
 	private int[] availableMoves;
 	private int randomNumber;
-	private int roomID
+	private int roomID;
+	private int time;
 	
 	
 	public Room(String name, int[] availableMoves, int randomNumber){
@@ -12,6 +13,11 @@ public abstract class Room {
 	}//end of constructor
 	
 	public abstract void handle();
+	
+	public void setTimeWasted(int timewaste){
+		time=time+timewaste;}
+	pulbic int getTimeWasted(){
+		return time;
 	
 	public String getName() {
 		return name;
