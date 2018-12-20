@@ -5,7 +5,7 @@ public class RoomsExample {
 	public static void main(String[] args) {
 		Random rd = new Random();
 		Scanner sc = new Scanner(System.in);
-		Room[] myRooms = new Room[5];
+		Room[] myRooms = new Room[14];
 		Room SercFields=new Room(Serc Fields,availableMoves, int randomNumber);
 		Room ARC=new Room(Alison Road Classroom Building,availableMoves, int randomNumber);
 		Room ChemLabs=new Room(Chemistry Labs,availableMoves, int randomNumber);
