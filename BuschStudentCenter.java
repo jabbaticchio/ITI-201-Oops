@@ -72,6 +72,7 @@ public class BuschStudentCenter {
 				decision3=scan.nextInt();
 			}
 		}*/
+	sc.close();
 	}
 
 
