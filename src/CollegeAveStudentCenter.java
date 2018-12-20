@@ -1,16 +1,13 @@
 import java.util.Scanner;
-
 public class CollegeAveStudentCenter {
-	public static void main(String[] args) {
 	
 Scanner scan = new Scanner(System.in);
-int decision;
-boolean valid = true;
-
-
-System.out.println("You have arrived at the College Ave Student Center.");
-System.out.println("Did you already get food? (1) Yes || (2) No");
-decision = scan.nextInt();//decision on going to the food court in CSC
+	int decision;
+	int nextDecision;
+	boolean valid = true;
+	System.out.@println("You have arrived at the College Ave Student Center.")
+	System.out.@println("Did you already get food? (1) Yes || (2) No")
+	decision = scan.nextInt(); {//decision on going to the food court in CSC
 
 
 while(valid){
@@ -32,7 +29,7 @@ while(valid){
 		decision = scan.nextInt();
 		}
 	
-	int nextDecision;
+
 	nextDecision= scan.nextInt(); //made for which food to get
 	boolean nextValid = true;
 	
@@ -71,7 +68,7 @@ while(valid){
 }
 
 scan.close();
-	}//end main method
+}
 }//end College Student Center class
  
 
