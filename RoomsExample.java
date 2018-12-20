@@ -5,11 +5,11 @@ public class RoomsExample {
 	public static void main(String[] args) {
 		Random rd = new Random();
 		Scanner sc = new Scanner(System.in);
-		Room[] myRooms = new Room[14];
-		Room SercFields=new Room(Serc Fields,availableMoves, int randomNumber);
-		Room ARC=new Room(Alison Road Classroom Building,availableMoves, int randomNumber);
-		Room ChemLabs=new Room(Chemistry Labs,availableMoves, int randomNumber);
-		Room BSC=new Room(Busch Student Center,availableMoves, int randomNumber);
+		ArrayList<Room> myRooms=new ArrayList<Room>();
+		Room SercFields=new SercFields(Serc Fields,availableMoves, int randomNumber);
+		Room ARC=new ARC(Alison Road Classroom Building,availableMoves, int randomNumber);
+		Room ChemLabs=new ChemLabs(Chemistry Labs,availableMoves, int randomNumber);
+		Room BSC=new BSC(Busch Student Center,availableMoves, int randomNumber);
 		Room HCBS=new Room(Hill Center Bus Stop,availableMoves, int randomNumber);
 		Room Woodys=new Room(Woodys Food,availableMoves, int randomNumber);
 		Room PaneraBSC=new Room(Panera Bread at the Busch Student Center,availableMoves, int randomNumber);
