@@ -1,7 +1,5 @@
 import java.util.Scanner;
 public class BuschStudentCenter {
-	public static void main(String[] args)
-	{
 		Scanner scan = new Scanner(System.in);
 		int decision;
 		boolean valid = true;
@@ -38,4 +36,4 @@ public class BuschStudentCenter {
 			System.out.println("to burn. Do you want to get food?(1) Yes (2) No)");
 		}
 	}
-}
+
