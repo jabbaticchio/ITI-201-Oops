@@ -2,6 +2,7 @@ public abstract class Room {
 	private String name;
 	private int[] availableMoves;
 	private int randomNumber;
+	private int roomID
 	
 	
 	public Room(String name, int[] availableMoves, int randomNumber){
@@ -25,7 +26,9 @@ public abstract class Room {
 	public void setAvailableMoves(int[] availableMoves) {
 		this.availableMoves = availableMoves;
 	}//end ofsetAvailableMoves(int[] availableMoves)
-
+	public int getroomID(){
+		return roomID
+	}
 	public int getRandomNumber() {
 		return randomNumber;
 	}//end of getRandomNumber()
