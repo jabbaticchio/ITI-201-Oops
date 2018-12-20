@@ -1,7 +1,8 @@
-public class Room {
+public abstract class Room {
 	private String name;
 	private int[] availableMoves;
 	private int randomNumber;
+	
 	
 	public Room(String name, int[] availableMoves, int randomNumber){
 		this.name = name;
