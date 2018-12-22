@@ -1,7 +1,15 @@
 import java.util.Scanner;
-public class BuschStudentCenter {
-	public static void main(String[] args)
-	{
+public class BuschStudentCenter extends Room{
+	private Item item;
+	private String name;
+	
+	public BuschStudentCenter(String name) {
+		super(name);
+		// TODO Auto-generated constructor stub
+	}
+
+	@Override
+	public int handle() {
 		Scanner scan = new Scanner(System.in);
 		int decision;
 		int decision2; 
@@ -36,14 +44,25 @@ public class BuschStudentCenter {
 			valid=true;
 			while(valid)
 			{
-				if(decision2>0 && decision2<5)
+				if(decision2 < 1 || decision2 > 4)
 				{
-					valid=false;
+					break;
 				}
 				else
 				{
-					System.out.println("Please pick either (1)Gerlanda's? (2) Moe's? (3)Panera (4)Nah, I'll just wait for the bus");
-					decision2 = scan.nextInt();
+					if(decision2 == 1) {
+						return 7;
+					}
+					
+					else if(decision2 == 2) {
+						return 8;
+					}
+					else if(decision2 == 3) {
+						return 6;
+					}
+					else
+						continue;
+					
 				}
 
 			}
@@ -73,6 +92,14 @@ public class BuschStudentCenter {
 				decision3=scan.nextInt();
 			}
 		}*/
+	scan.close();
+	return 0;
 	}
-}
+
+	@Override
+	public Item getItem() {
+		// TODO Auto-generated method stub
+		return item;
+	}
+	}
 

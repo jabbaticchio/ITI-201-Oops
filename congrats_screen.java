@@ -8,7 +8,7 @@ import java.util.Scanner;
 import java.io.FileNotFoundException;
 import java.awt.image.BufferedImage;
 
-public class arcadio {
+public class congrats_screen {
 	public static void main (String[]args) {
 		
 		int width = 240;

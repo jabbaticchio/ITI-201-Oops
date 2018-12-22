@@ -1,0 +1,16 @@
+
+Index in room array| Name of Room
+0 |Serc Fields
+1 |Arc
+2 |Chem Labs
+3 |Busch Student Center
+4 |Hill Center Bus Stop
+5 |Woodys
+6 |Panera-BSC
+7 |Gerlandas-BSC
+8 |Moe's-BSC
+9 |College Ave Student Center
+10|Panera-CASC
+11|Gerlandas-CASC
+12|Moes-CASC
+13|Object Oriented Programming Classroom
