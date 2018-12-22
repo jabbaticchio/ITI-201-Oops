@@ -8,7 +8,10 @@ public class PaneraCASC extends Room {
 	
 	@Override
 	public int handle() {
-		return 0;
+		System.out.println("You have chosen Panera");
+		System.out.println("Please pick up the sandwhich item and proceed to the OOP classroom");
+		Player.backpack.add(new Item ("Sandwich"));
+		return 13;
 	}
 
 	@Override

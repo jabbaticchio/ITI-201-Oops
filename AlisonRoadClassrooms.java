@@ -4,7 +4,7 @@ public class AlisonRoadClassrooms extends Room{
 	private Item item;
 	public AlisonRoadClassrooms(String name) {
 		super(name);
-		// TODO Auto-generated constructor stub
+		
 	}
 
 
@@ -23,30 +23,27 @@ public class AlisonRoadClassrooms extends Room{
 				{
 					valid = false;
 					System.out.println("You decided to get food at Woody's");
+					
 				}
 				else if(decision == 2)//no = catch the bus
 				{
 					valid = false;
 					System.out.println("You decided to skip getting food and are instead catching the bus to CASC");
+					return 9;
 				}
 				else
 				{
-					System.out.println("Please pick 1 or 2");
+					System.out.println("Please pick 1");
 					decision = sca.nextInt();
 				}
 			}
 			if (decision == 1) //what happens next
 			{
-				System.out.println("As you enter Woody's, you wonder what you would like to get");
-				System.out.println("Would you like (1)A Burrito? (2) Coffee? (3) Bagel? (4)Nothing, I'll just wait for the bus");
+				return 9;
 			}
-			else
-			{
-				System.out.println("You finally get off the bus at the College Avenue Student Center, but you have 15 minutes");
-				System.out.println("to burn. Do you want to get food?(1) Yes (2) No)");
-			}
+			
 		
-		return 0;
+		return 9;
 	}
 
 

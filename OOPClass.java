@@ -5,6 +5,7 @@ import java.awt.RenderingHints;
 import java.awt.image.BufferedImage;
 
 public class OOPClass extends Room{
+	private int Score=100;
 	private String name;
 	private Item item;
 	public OOPClass(String name) {
@@ -125,6 +126,30 @@ public class OOPClass extends Room{
 				"...,,,,,,,,,,,,,,*,,,,...,/((%,,,,**,,,,,,,,,,*,,,,,,,,***,,,,,,***///***,,,,,,***//**,,,,,.,*/(/..,....,,............*...*%#,,**,,...,,..     .....   ........\r\n" + 
 				",,.,,,,*,,,,,,,,,,,**,,.,,,(*,****,,,,,,,,,,,,,,,,,,,******,,,**//**,,,,,*///*****,,**/((////((/,,,...,,............/..,*(,***,,.,,,,.......... .,,,,...     \r\n" + 
 				",*,,,*,,,*,,,**,,,,,****,,,**(*****,,,,,,,,,*,,,,,,,,,,*//******//**,,*////*******,,,*,,,,,,*/(((/*,,.,,,,,...,,,,..,,,*,,****,,,,,,,,,,,,,,..***,.... ");
+		System.out.println("Scoring in Progress...");
+		
+		for(int i = 0; i < Player.backpack.size(); i++) {
+			if(Player.backpack.get(i).toString().contains("pizza")) {
+				Score=Score+5;}
+			if (Player.backpack.get(i).toString().contains("pepperoni pizza")) {
+				Score=Score+7;
+			}
+			if(Player.backpack.get(i).toString().contains(("half eaten burrito"))) {
+				Score=Score-60;
+			}
+			if (Player.backpack.get(i).toString().contains("textbook")) {
+				Score=Score+10;
+			}
+			if (Player.backpack.get(i).toString().contains("laptop")) {
+				Score=Score+15;
+			}
+			
+		System.out.println("Final Score: .......... "+ Score);
+					
+		}
+		
+		
+		System.exit(0);
 	return 0;
 	}
 

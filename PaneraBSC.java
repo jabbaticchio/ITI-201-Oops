@@ -11,8 +11,10 @@ public class PaneraBSC extends Room {
 	@Override
 	public int handle() {
 		System.out.println("You went and obtained a sandwich from panera and took the Bus to the College Avenue Student Center.");
-
-		return 0;
+		Player.backpack.add(new Item("Sandwich"));
+		
+		
+		return 9;
 	}
 	
 	

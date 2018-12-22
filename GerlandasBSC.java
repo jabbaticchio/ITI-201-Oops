@@ -8,6 +8,8 @@ public class GerlandasBSC extends Room {
 	@Override
 	public int handle() {
 System.out.println("You got some tasty pizza from the Gerlanda's Pizzeria at the Busch Student Center. You then got on the bus towards College ave student center.");
+Player.backpack.add(new Item("Pizza"));
+
 		return 9;
 	}
 	@Override

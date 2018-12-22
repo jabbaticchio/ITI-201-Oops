@@ -24,12 +24,13 @@ decision = scan.nextInt();//decision on going to the food court in CSC
 while(valid){
 	if (decision == 1)//go to class
 	{
-		valid = false;
+		
 		System.out.println("You decide to skip the food court and go directly to the OOP classroom.");
+		return 13;
 	}
 	else if(decision == 2)//go get food
 	{
-		valid = false;
+		//valid = false;
 		System.out.println("You decide to get food at the food court");
 		System.out.println("As you approach the food court, you wonder what you would like to eat");
 		System.out.println("Would you like (1)Gerlanda's? (2) Moe's? (3)Panera? (4)Nah, I'll just go to class");
@@ -47,28 +48,30 @@ while(valid){
 	while (nextValid) {	
 		if (nextDecision == 1) //Gerlanda's
 		{
-			nextValid = false;
-			System.out.println("You have chosen Gerlanda's");
-			System.out.println("Please pick up the coffee item and proceed to the OOP classroom");	
+			
+			return 11;
 		}
 		else if (nextDecision == 2) //Moe's
 		{
-			nextValid = false;
-			System.out.println("You have chosen Moe's");
-			System.out.println("Please pick up the burrito item and proceed to the OOP classroom");
+			
+			
+
+			return 13;
 		}
 		else if (nextDecision == 3) //Panera
 		{
-			nextValid = false;
-			System.out.println("You have chosen Panera");
-			System.out.println("Please pick up the bagel item and proceed to the OOP classroom");
+			
+		
+
+			return 10;
 		}
 
 		else if (nextDecision == 4) //User changes their mind
 		{
-			nextValid= false;
+	//		nextValid= false;
 			System.out.println("You decide you don't want any food");
 			System.out.println("You go to the OOP classroom");	
+			return 13;
 		}
 		else
 		{

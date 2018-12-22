@@ -7,8 +7,8 @@ public class GerlandasCASC extends Room {
 	}
 	@Override
 	public int handle() {
-System.out.println("You got some tasty pizza from the student Center and went to the Object Oriented Programming Classroom");
-
+System.out.println("You got some tasty pepperoni pizza from the student Center and went to the Object Oriented Programming Classroom");
+Player.backpack.add(new Item("Pepperoni Pizza"));
 		return 13;
 	}
 	@Override

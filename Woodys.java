@@ -9,8 +9,11 @@ public class Woodys extends Room{
 	}
 	@Override
 	public int handle() {
-		// TODO Auto-generated method stub
-		return 0;
+		System.out.println("As you enter Woody's, you wonder what you would like to get");
+		System.out.println("Too bad, you got a bagel.");
+		
+		Player.backpack.add(new Item ("bagel"));
+		return 9;
 	}
 	@Override
 	public Item getItem() {

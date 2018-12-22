@@ -102,10 +102,23 @@ public class RoomsExample {
 			// ensures you don't add null objects
 			if(myRooms.get(num).getItem() != null)
 			Player.backpack.add(myRooms.get(num).getItem());
+			if (!Player.backpack.isEmpty()) {
+			System.out.println("Inventory = " + Player.backpack);}
 			//String goTo = (myRooms.get(i).getAvailableMoves()[0]+1) + " & " + (myRooms.get(i).getAvailableMoves()[1]+1);
 			//System.out.println("What room would you like to go to? Rooms " + goTo + " are available or press q to quit.");
 			
 			try {
+				/*The point of this method is to clearly demonstrate polymorphic behavior between individual concrete classes
+				 *  subclassing the abstract class "Room". The ArrayList<Room> myRooms contains static type "Room",
+				 *  but has different dynamic types, i.e. "BuschStudentCenter", or "MoesBSC". At runtime, 
+				 *  overriding the Room's handle() method will return a path number, in which the next iteration for the loop will result
+				 *  in calling that "room's handle method". The point of polymorphism is to reuse the code, and create 
+				 *  different behaviors for each class. In doing so, getAvailableMoves() would not be necessary
+				 *  since you would be following the path options given. getAvailableMoves() would require filtering out
+				 *  the different Rooms that can be allowed, and would also require knowing the precise location of each Room
+				 *  at any given point in time.
+				 *
+				 */
 				
 				num = myRooms.get(num).handle();
 				

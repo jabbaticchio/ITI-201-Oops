@@ -25,9 +25,8 @@ public class ChemistryBuildingPath extends Room{
 		}
 		else {
 			System.out.println("Mere seconds later, the biggest Canadian Goose you have ever seen lands a mere five feet ahead of you. The goose spreads its wings wide so that you cannot pass and lets out a hellish screech.");
-			System.out.println("What is your next move?");
+			System.out.println("What is your next move? Press 1,2, or 3");
 
-			// need an if statement here do determine if objects are in inventory and their usability
 
 			while(valid){
 				if (decision == 1)// do nothing, get attacked by the goose.
@@ -39,37 +38,57 @@ public class ChemistryBuildingPath extends Room{
 				{
 					valid = false;
 					System.out.println("You quickly take the food from your backpack, waving it in front of you. The goose is interested in your peace offering and leans in to smell the food. Without warning, the goose snaps the food out of your hand and flies off into the horizon. Your quick thinking allowed you to proceed unharmed, albeit without your food.");
+					Player.backpack.remove("half eaten burrito");
+					break;
 				}
 
 				else if (decision == 3)// use laptop or textbook to fight the goose
 				{
 					valid = false;
-					System.out.println("You fumble with your backpack, removing the heaviest item you have from it. Without checking if it's a laptop or a textbook, you throw the object at the goose. You strike it square in the beak and it squeals in pain as it takes off, flying off into the horizon.");
+					System.out.println("You fumble with your backpack, removing the heaviest item you have from it. Without checking if it's a laptop or a textbook, you throw the object at the goose."
+							+ " You strike it square in the beak and it squeals in pain as it takes off, flying off into the horizon. ");
+					if ((randgen.nextInt(2))==1) {
+						
+					
+					System.out.println("You trashed your laptop in the process.");
+					Player.backpack.remove("laptop");
+					}
+					else {
+						System.out.println("You trashed your textbook in the process.");
+						Player.backpack.remove("textbook");
+
+					}
 				}
+					
 				else
 				{
-					System.out.println("Please pick an option.");
+					System.out.println("Please pick a valid option.");
 					decision = sca.nextInt();
+					
 				}
 			}
 
 		}
 		
-		System.out.println("You finally arrive at the Busch Suites. You can now either wait for a bus to get on or head back the way you came. What would you like to do?");
+	
+		System.out.println("You finally arrive at the Busch Suites. You can now either wait for a bus to get on or head back the way you came. What would you like to do?" + "\n" + "Press 1 to go to College Ave Student Center, or press 2 to go to the previous room.");
+		int num = sca.nextInt();
 		while(valid){
-			if (decision == 1)// Take the bus to the College Ave Student Center
+			if (num == 1)// Take the bus to the College Ave Student Center
 			{
 				valid = false;
 				System.out.println("");
+				return 9;
 			}
 
 			else // go back to the previous room
 			{
-				System.out.println("");
-				decision = sca.nextInt();
+				//System.out.println("asdf");
+				//num = sca.nextInt();
+				return 0;
 			}
 		}
-		return decision;
+		return num;
 
 
 	}

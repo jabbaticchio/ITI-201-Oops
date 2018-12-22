@@ -19,4 +19,9 @@ public class Item{
  public String getDescription(){
  return this.description;
  }
+ 
+ public String toString() {
+	 return name;
+ }
+ 
  }

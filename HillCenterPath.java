@@ -11,7 +11,7 @@ public class HillCenterPath extends Room{
 		Scanner scan=new Scanner (System.in);
 		Random randgen=new Random();
 		boolean valid=true;
-		System.out.println("You walked to the Hill Center Bus Stop knowing that this stop was the best /n method to get back to College Ave for the exam!");
+		System.out.println("You walked to the Hill Center Bus Stop knowing that this stop was the best method to get back to College Ave for the exam!");
 		while (true) {
 		System.out.println("The stop isn't very crowded but, you may need to wait.");
 		

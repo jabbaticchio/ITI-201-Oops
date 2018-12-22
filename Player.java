@@ -1,7 +1,7 @@
 import java.util.*;
 public class Player{
 	String name = "default";
-	int score = 100;
+	static int score = 100;
 	public static ArrayList<Item> backpack = new ArrayList<Item>();
 
 	public Player(String name)
@@ -13,11 +13,11 @@ public class Player{
 		return this.backpack;
 	}
 	*/
-	public int getScore()
+	private int getScore()
 	{
 		return score;
 	}
-	public void setScore(int x)
+	private static void setScore(int x)
 	{
 		score+=x;
 	}
